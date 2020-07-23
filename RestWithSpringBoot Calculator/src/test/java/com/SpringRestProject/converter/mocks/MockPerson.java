@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.SpringRestProject.data.model.Person;
-import com.SpringRestProject.data.vo.PersonVO;
+import com.SpringRestProject.data.vo.v1.PersonVO;
 
 public class MockPerson {
 

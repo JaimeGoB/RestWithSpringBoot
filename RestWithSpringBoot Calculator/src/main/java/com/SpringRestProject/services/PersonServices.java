@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 import com.SpringRestProject.converter.DozerConverter;
 import com.SpringRestProject.converter.custom.PersonConverter;
 import com.SpringRestProject.data.model.Person;
-import com.SpringRestProject.data.vo.PersonVO;
-import com.SpringRestProject.data.vo.v2.PersonVOV2;
+import com.SpringRestProject.data.vo.v1.PersonVO;
+import com.SpringRestProject.data.vo.v1.PersonVOV2;
 import com.SpringRestProject.exception.ResourceNotFoundException;
 import com.SpringRestProject.repository.PersonRepository;
 

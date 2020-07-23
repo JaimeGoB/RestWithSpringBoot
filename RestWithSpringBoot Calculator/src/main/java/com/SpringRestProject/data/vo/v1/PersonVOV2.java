@@ -1,4 +1,4 @@
-package com.SpringRestProject.data.vo.v2;
+package com.SpringRestProject.data.vo.v1;
 
 import java.io.Serializable;
 import java.util.Date;

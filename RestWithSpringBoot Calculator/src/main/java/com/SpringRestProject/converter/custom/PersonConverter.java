@@ -4,7 +4,7 @@ import java.util.Date;
 import org.springframework.stereotype.Service;
 
 import com.SpringRestProject.data.model.Person;
-import com.SpringRestProject.data.vo.v2.PersonVOV2;
+import com.SpringRestProject.data.vo.v1.PersonVOV2;
 
 @Service
 public class PersonConverter {

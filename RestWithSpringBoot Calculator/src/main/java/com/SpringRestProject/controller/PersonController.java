@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.SpringRestProject.data.vo.PersonVO;
-import com.SpringRestProject.data.vo.v2.PersonVOV2;
+import com.SpringRestProject.data.vo.v1.PersonVO;
+import com.SpringRestProject.data.vo.v1.PersonVOV2;
 import com.SpringRestProject.services.PersonServices;
 
 /*
