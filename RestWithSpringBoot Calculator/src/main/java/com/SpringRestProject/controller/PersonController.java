@@ -17,7 +17,7 @@ import com.SpringRestProject.data.vo.v1.PersonVO;
 import com.SpringRestProject.data.vo.v1.PersonVOV2;
 import com.SpringRestProject.services.PersonServices;
 
-/*
+
 @RestController
 @RequestMapping("/api/person/v1")
 public class PersonController {
@@ -54,7 +54,6 @@ public class PersonController {
 	}	
 	
 }
-*/
 
 //Version 1
 /*
@@ -104,7 +103,7 @@ public class PersonController {
 }
 */
 //Version 2
-
+/*
 @RestController
 @RequestMapping("/api/person/v1")
 public class PersonController {
@@ -148,3 +147,4 @@ public class PersonController {
 	}	
 	
 }
+*/
