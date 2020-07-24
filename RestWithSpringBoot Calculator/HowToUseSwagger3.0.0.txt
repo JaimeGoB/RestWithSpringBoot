@@ -1,0 +1,7 @@
+Go to:
+http://localhost:8080/swagger-ui/index.html
+
+In the search window type:
+/v2/api-docs/
+
+done...
