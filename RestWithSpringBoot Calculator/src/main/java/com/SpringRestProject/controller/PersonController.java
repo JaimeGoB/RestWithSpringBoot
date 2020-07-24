@@ -26,7 +26,7 @@ public class PersonController {
 	
 	@Autowired
 	private PersonServices service;
-	
+
 	@GetMapping(produces = { "application/json", "application/xml", "application/x-yaml" })
 	public List<PersonVO> findAll()
 	{
