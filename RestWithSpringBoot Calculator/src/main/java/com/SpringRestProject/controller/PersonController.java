@@ -19,7 +19,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.SpringRestProject.data.vo.v1.PersonVO;
 import com.SpringRestProject.services.PersonServices;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
+
+@Api(tags = "PersonEndpoint")
 @RestController
 @RequestMapping("/api/person/v1")
 public class PersonController {
@@ -27,6 +31,7 @@ public class PersonController {
 	@Autowired
 	private PersonServices service;
 
+	@ApiOperation(value = "Find all people" ) 
 	@GetMapping(produces = { "application/json", "application/xml", "application/x-yaml" })
 	public List<PersonVO> findAll()
 	{
@@ -40,6 +45,7 @@ public class PersonController {
 		return persons;
 	}	
 	
+	@ApiOperation(value = "Find a specific person by your ID" )
 	@GetMapping(value = "/{id}", produces = { "application/json", "application/xml", "application/x-yaml" })
 	public PersonVO findById(@PathVariable("id") Long id) {
 		PersonVO personVO = service.findById(id);
@@ -47,6 +53,7 @@ public class PersonController {
 		return personVO;
 	}	
 	
+	@ApiOperation(value = "Create a new person") 
 	@PostMapping(produces = { "application/json", "application/xml", "application/x-yaml" }, 
 			consumes = { "application/json", "application/xml", "application/x-yaml" })
 	public PersonVO create(@RequestBody PersonVO person) {
@@ -54,7 +61,7 @@ public class PersonController {
 		personVO.add(linkTo(methodOn(PersonController.class).findById(personVO.getKey())).withSelfRel());
 		return personVO;
 	}
-	
+	@ApiOperation(value = "Update a specific person")
 	@PutMapping(produces = { "application/json", "application/xml", "application/x-yaml" }, 
 			consumes = { "application/json", "application/xml", "application/x-yaml" })
 	public PersonVO update(@RequestBody PersonVO person) {
@@ -63,6 +70,7 @@ public class PersonController {
 		return personVO;
 	}	
 	
+	@ApiOperation(value = "Delete a specific person by your ID")
 	@DeleteMapping("/{id}")
 	public ResponseEntity<?> delete(@PathVariable("id") Long id) {
 		service.delete(id);
